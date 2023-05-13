@@ -1,0 +1,49 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/his_schema?useSSL=false
+    username: root
+    password: root
+    hikari:
+      initialization-fail-timeout: 0
+
+  application:
+    name: his_end
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+entity_id: E01
+
+server:
+  port: 8085
+  servlet:
+    context-path: /his_end
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+cms_service:
+  base:
+    url: http://localhost:8084/cms_end
+admin_service:
+  base:
+    url: http://localhost:8082/cms_end
+his:
+  client:
+    id: hisclient1234
+    secret: hissecret
+    aeskey: 26452948404D635166546A576E5A7234
+
+cms:
+  client:
+    id: cmsclient1234
+    secret: cmssecret
+
+

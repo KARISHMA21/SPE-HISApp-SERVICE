@@ -107,6 +107,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>his_service</finalName>
     </build>
 
 </project>
