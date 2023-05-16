@@ -5,7 +5,7 @@ metadata:
 data:
   host : mysql-his
   dbName: his_schema
-#   cms: http://localhost:8084
-#   admin: http://localhost:8082
-  cms: http://10.111.65.205:8084
-  admin: http://10.108.163.22:8082
+  cms: http://localhost:8084
+  admin: http://localhost:8082
+#   cms: http://10.111.65.205:8084
+#   admin: http://10.108.163.22:8082
