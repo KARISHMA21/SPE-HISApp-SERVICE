@@ -97,7 +97,7 @@ private  Integer cred_id;
     private String password;
     private String name;
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id", referencedColumnName = "did")
+    @JoinColumn(name = "did", referencedColumnName = "did")
     private DoctorEntity doctorEntity;
 
 
